@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #aaaaaa;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 5px;
+}
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.first{
+    height: 200px;
+    width: 200px;
+}
+.first img{
+    height: 100%;
+    width: 100%;
+}
+
+.parts {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+}
+
+@media (max-width: 600px) {
+    .parts {
+        grid-template-columns: 1fr;
+    }
+}
